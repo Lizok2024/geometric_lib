@@ -1,21 +1,72 @@
+# Фунции, описания и примеры
+## `calculate.py`
+### `def calc(fig, func, size):`
+- Заданная функция вычисляет значение для указанной фигуры, исходя из размера фигуры.
+- Пример вызова функции:
+```python```
+>> calc(`circle`, `area`, [2])
+> 
+>12,5663706144
 
-# How to use calculator:
-1. Run `python calculate.py`
-2. Enter the figure name. Available are Circle, Square.
-3. Enter the function: Area or Perimeter.
-4. Enter figure sizes. Radius for circle, one side for square.
-5. Get the answer!
+## `circle.py`
+### `def areas(r):`
+- Вычисляет площадь круга по заданному радиусу.
+- Пример вызова функции:
+```python```
+>> area(2)
+> 
+> 12,5663706144
 
-# Math formulas
-## Area
-- Circle: `S = πR²`
-- Rectangle: `S = ab`
-- Square: `S = a²`
-- Triangle: `S = sqrt(p * (p-a) * (p-b) * (p-c))` where p is semiperimeter
+### `def perimeter(a):`
+- Вычисляет длину окружкости по заданному радиусу.
+- Пример для вызова функций:
+```python```
+>> perimeter(2)
+> 
+> 12,5663706144
 
-## Perimeter
-- Circle: `P = 2πR`
-- Rectangle: `P = 2a + 2b`
-- Square: `P = 4a`
-- Triangle: `P = a + b + c`
+## `square.py`
+### `def area(a):`
+- Вычисляет площадь квадрата по заданной длине стороны. 
+- Пример для вызова функции:
+```python```
+>> area(2)
+> 
+> 4
 
+### `def perimeter(a):`
+- Вычисляет периметр квадрата по заданной длине стороны.
+- Примеры для вызова функции:
+```python```
+>> perimeter(2)
+> 
+> 8
+
+## `triangle.py`
+### `def area(a, b, c):`
+- Вычисляет полупериметр треугольника по заданным длинам сторон.
+- Примеры для вызова функции:
+```python```
+>> area(2, 2, 2)
+> 
+> 3
+
+### `def perimeter(a, b, c):`
+- Вычисляет периметр треугольника по длинам сторон.
+- Примеры для вызова функции:
+```python```
+>> perimeter(2, 2, 2)
+> 
+> 6
+
+# История изменения проекта с хешами комитов.
+1. **d76db2a** L-04: Add calculate.py
+   (Добавлен файл для расчётов)
+2. **51c40eb** L-04: Doc updated for triangle
+   (Обновлена документация по работе с треугольниками)
+3. **d080c78** L-04: Triangle added
+   (Добавлен файл для расчётов)
+4. **d078c8d** (origin/main, origin/HEAD, main) L-03: Docs added
+   (Добавлена документация)
+5. **8ba9aeb** L-03: Circle and square added
+   (Добавлены файлы для расчётов)

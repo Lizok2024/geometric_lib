@@ -23,3 +23,6 @@ def perimeter(a, b, c):
             (float) - полупериметр треугольника
 '''
     return a + b + c
+    
+    
+    

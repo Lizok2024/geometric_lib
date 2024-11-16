@@ -11,7 +11,7 @@ class TestSquare(unittest.TestCase):
 
     def test_area_zero(self):
         side = 0
-        result = area (side)
+        result = area(side)
         self.assertEqual(result, 0)
 
     def test_perimeter(self):

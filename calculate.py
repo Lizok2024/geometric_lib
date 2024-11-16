@@ -13,6 +13,7 @@ sizes = {
     'triangle-perimeter': 3
 }
 
+
 def calc(fig, func, size):
     # Проверка наличия передаваемого аргумента fig in figs
     assert fig in figs
@@ -46,12 +47,12 @@ if __name__ == "__main__":
     size = list()
 
     while fig not in figs:
-        fig = input(f"Enter figure name, available are {figs}:\n")
+        fig = input(f"Enter figure name, available are {figs}:")
 
     while func not in funcs:
-        func = input(f"Enter function name, available are {funcs}:\n")
+        func = input(f"Enter function name, available are {funcs}:")
 
     while len(size) != sizes.get(f"{func}-{fig}", 1):
-        size = list(map(int, input("Input figure sizes separated by space, 1 for circle and square\n").split(' ')))
+        size = list(map(int, input("Input figure sizes").split(' ')))
 
     calc(fig, func, size)

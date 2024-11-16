@@ -14,4 +14,5 @@ class TestTriangle(unittest.TestCase):
         self.assertEqual(result, 12)
 
 
-if __name__ == '__main__':    unittest.main()
+if __name__ == '__main__':
+    unittest.main()

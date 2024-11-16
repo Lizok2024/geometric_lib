@@ -3,6 +3,7 @@ on:
     branches:
       - master
       - release
+      - feat-tests
   pull_request:
     branches:
       - master

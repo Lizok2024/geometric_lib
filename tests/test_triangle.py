@@ -13,7 +13,7 @@ class TestTriangle(unittest.TestCase):
     def test_perimeter(self):
         a, b, c = 3, 4, 5
         result = perimeter(a, b, c)
-        self.assertEqual (result, 12)
+        self.assertEqual(result, 12)
 
 
 if __name__ == '__main__':    unittest.main()

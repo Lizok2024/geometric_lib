@@ -14,22 +14,22 @@ sizes = {
 }
 
 def calc(fig, func, size):
-	#Проверка наличия передаваемого аргумента fig in figs
+	# Проверка наличия передаваемого аргумента fig in figs
 	assert fig in figs
 
-	#Проверка наличия передаваемого аргумента func in funcs
+	# Проверка наличия передаваемого аргумента func in funcs
 	assert func in funcs
 
-	#Проверка на количество аргументов
+	# Проверка на количество аргументов
 	key = f'{fig}-{func}'
 	expected_args = sizes.get(key)
 	assert expected_args is not None
 	assert len(size) == expected_args
 
-	#Проверка на положительные аргументы
+	# Проверка на положительные аргументы
 	assert all(s >= 0 for s in size)
 
-	#Проверка, что труегольник существует
+	# Проверка, что труегольник существует
 	if fig == 'triangle':
 		a, b, c = size
 		assert a + b > c and a + c > b and c + b > a

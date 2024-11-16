@@ -3,8 +3,6 @@ from triangle import perimeter, area
 
 
 class TestTriangle(unittest.TestCase):
-
-
     def test_area(self):
         a, b, c = 3, 4, 5
         result = area(a, b, c)

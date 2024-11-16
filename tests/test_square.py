@@ -4,7 +4,6 @@ from square import area, perimeter
 
 class TestSquare(unittest.TestCase):
 
-
     def test_area(self):
         side = 1
         result = area(side)
